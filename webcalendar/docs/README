@@ -1,0 +1,14 @@
+WebCalendar Documentation
+-------------------------------------------------------------
+
+WebCalendar-Database.html
+  Describes the database tables in WebCalendar
+  Can be regenerated (if you have perl and make installed) by typing "make"
+
+WebCalendar-UserManual.html
+  Instructions for end users
+
+WebCalendar-SysAdmin.html
+  Instructions for system administrators on installing and configuring
+  WebCalendar.
+

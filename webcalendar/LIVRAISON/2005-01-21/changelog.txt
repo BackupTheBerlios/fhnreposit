@@ -1,0 +1,19 @@
+
+# Améliorations :
+- Possibilité de prendre rendez vous pour toutes les personnes d'une vue
+- Certains boutons sont maintenant à la charte
+- La popup d'ajout de personne a été repensée
+- Les ListBox sont disponible dans l'affichage journalier et mensuel
+- Affichage d'un petit "picto" sur le calendrier/vue selon la catégorie
+- Refonte de l'écran préférence pour une éventuelle ouverture
+- Ajout d'un bouton "Retour" dans le détail d'un évènement
+
+# Corrections : 
+- La popup de sélection de personne est mise en hauteur (pour petit écran).
+- Retour du bouton "Aller A" pour corriger le problème du choix déjà selectionné. Exemple, l'année 2005 étant sélectionné, je veux aller sur la vu 2005.
+- Mise en couleur des jours avec rendez vous dans la vue mensuelle
+- Lors de la création ou de l'a suppression d'un évènement, le retour à l'ancienne vue se fait automatiquement
+- Le bouton "preview" étant inutile a été supprimé
+- Dans l'administration, tri les personnes par prénom
+- Le lien d'accès à webcalendar passe de "webcalendarCVS" à "webcalendar"
+- L'import / Export est de nouveau fonctionnel

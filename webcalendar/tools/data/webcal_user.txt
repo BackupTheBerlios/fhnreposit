@@ -1,0 +1,13 @@
+admin	21232f297a57a5a743894a0e4a801fc3	Administrator	Default	Y	\N
+evinatie	5026bc63b5418ffdb54f238db245ec01	Vinatier	Eric	Y	eric.vinatier@haras-nationaux.fr
+fbreuill	1ecf764a864619c9fed9a7ce94d6eff4	Breuille	Francis	Y	francis.breuille@haras-naitonaux.fr
+cbruna	0454aa97682235df3ed1a3456bc86e62	Bruna	Claudette	N	claudette.bruna@haras-nationaux.fr
+mpennequ	c2d373fb34179ad7a6ea5d576add492f	Pennequin	Marcel	N	marcel.penenquin@haras-nationaux.fr
+vmaury	1ecf764a864619c9fed9a7ce94d6eff4	Maury	Vincent	Y	\N
+ohardoui	c1f570be034167bbc8e9a141cc8dc9da	Hardouin	Olivier	N	olivier.hardouin@haras-nationaux.fr
+bbarcelo	a0e7b2a565119c0a7ec3126a16016113	Barcelo	Bruno	N	bruno.barcelo@haras-nationaux.fr
+dtaysse	07ac30b4664640c35e93ad19e7803ade	Taysse	Daniel	N	daniel.taysse@haras-naitonaux.fr
+ddecadol	1ecf764a864619c9fed9a7ce94d6eff4	de Cadolle	Delphine	N	delphine.decadolle@haras-nationaux.fr
+fviaud	c24e8ae6a815c91fd96a1c1a8fa9bcee	Viaud	Frédérique	N	frederique.viaud@haras-nationaux.fr
+srenon	1ecf764a864619c9fed9a7ce94d6eff4	Renon	Sébastien	N	sebastien.renon@haras-nationaux.fr
+lgerard	1ecf764a864619c9fed9a7ce94d6eff4	Gerard	Loetitia	N	loetitia.gerard@haras-nationaux.fr
