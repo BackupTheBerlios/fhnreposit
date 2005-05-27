@@ -1,6 +1,6 @@
 <?
 /*
- * $Id: convert_passwords.php,v 1.1 2005/05/27 09:27:27 vmaury Exp $
+ * $Id: convert_passwords.php,v 1.2 2005/05/27 10:11:43 vmaury Exp $
  *
  * This script will alter the webcal_user table to allow 32 character passwords
  * and convert user passwords to PHP md5 passwords.

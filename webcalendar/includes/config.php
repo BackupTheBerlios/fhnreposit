@@ -53,7 +53,7 @@ $db_host = 'localhost';
 $db_login = 'root';
 $db_password = '';
 $db_database = 'webcalendar';
-$db_persistent = 1; 
+$db_persistent = 0; 
 
 $readonly = preg_match ( "/(1|yes|true|on)/i",
   $settings['readonly'] ) ? 'Y' : 'N';

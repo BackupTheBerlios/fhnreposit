@@ -36,7 +36,6 @@
 */
 
 session_start();
-$_SESSION['req'] = '';
 
 $debut = explode(" ",microtime());
 $debut = $debut[1]+$debut[0];
@@ -449,7 +448,7 @@ if ( $is_admin ) {
   {
     if ( ! empty ( $user ) && $user != $login && $login != "__public__") 
     {
-      echo "<a title=\"Retour Ã  mon agenda\" style=\"font-weight:bold;\" href=\"$mycal\">" . translate("Back to My Calendar") . "</a>";
+      echo "<a title=\"Retour à mon agenda\" style=\"font-weight:bold;\" href=\"$mycal\">" . translate("Back to My Calendar") . "</a>";
     }
     elseif($login != "__public__" )
     {
@@ -466,7 +465,7 @@ if ( $is_admin ) {
     {
         $url = 'list_unapproved.php';    
         if ($is_nonuser_admin) { $url .= "?user=$user"; }
-        echo " | <a title=\"Permet de valider les évènement en attente d'approbation\" style=\"font-weight:bold;\" href=\"$url\">" .  translate("Unapproved Events") . "</a>\n";
+        echo " | <a title=\"Permet de valider les énement en attente d'approbation\" style=\"font-weight:bold;\" href=\"$url\">" .  translate("Unapproved Events") . "</a>\n";
     }
   }
   // only display some links if we're viewing our own calendar.
@@ -474,7 +473,7 @@ if ( $is_admin ) {
   {
     if ( $can_add ) 
     {
-      echo " | <a title=\"Ajouter un évènement\" style=\"font-weight:bold;\" href=\"edit_entry.php";
+      echo " | <a title=\"Ajouter un énement\" style=\"font-weight:bold;\" href=\"edit_entry.php";
       if ( ! empty ( $thisyear ) ) 
       {
         print "?year=$thisyear";
@@ -484,16 +483,19 @@ if ( $is_admin ) {
       echo "\">" .  translate("Add New Entry") . "</a>\n";
     }
   }
-  echo " | <a title=\"Non-Utilisateurs\" style=\"font-weight:bold;\" href=\"nonusers_list.php\">Non-Utilisateurs</a>\n";
+
   if ( $login != '__public__' ) 
   {
-    echo " | <a title=\"Déconnexion\" style=\"font-weight:bold;\" href=\"login.php\">Déconnexion</a>\n";
+    echo " | <a title=\"Réservation d'une salle, d'une voiture, etc ...\" style=\"font-weight:bold;\" href=\"nonsers_list.php\">Réservation</a>\n";
+    echo " | <a title=\"Dénnexion\" style=\"font-weight:bold;\" href=\"login.php\">D&eacute;connexion</a>\n";
   } 
   else 
   {
-    echo "<a title=\"Connexion\" style=\"font-weight:bold;\" href=\"login.php\">Connexion à votre Agenda</a>\n"; 
+    echo " <a title=\"Réservation d'une salle, d'une voiture, etc ...\" style=\"font-weight:bold;\" href=\"nonsers_list.php\">Réservation</a>\n";
+    echo " | <a title=\"Connexion\" style=\"font-weight:bold;\" href=\"login.php\">Connexion &agrave; votre Agenda</a>\n"; 
   }       
 ?>
+
 
      </div>
   </div>
@@ -547,6 +549,5 @@ function print_trailer ( $include_nav_links=true, $closeDb=true,
   $fin = $fin[1]+$fin[0];
   $temps_passe = $fin-$debut; 
   echo "<!-- $temps_passe -->\n";
-  echo $_SESSION['req'];
 }
 ?>

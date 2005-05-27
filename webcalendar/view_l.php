@@ -1,6 +1,6 @@
 <?php
 /*
- * $Id: view_l.php,v 1.1 2005/05/27 09:26:39 vmaury Exp $
+ * $Id: view_l.php,v 1.2 2005/05/27 10:11:43 vmaury Exp $
  *
  * Page Description:
  *	This page will display the month "view" with all users's events

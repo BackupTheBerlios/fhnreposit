@@ -1,7 +1,7 @@
 <?php
 
 /*
- * $Id: report.php,v 1.1 2005/05/27 09:26:39 vmaury Exp $
+ * $Id: report.php,v 1.2 2005/05/27 10:11:43 vmaury Exp $
  *
  * Page Description:
  *	This page will either list all reports available to the current

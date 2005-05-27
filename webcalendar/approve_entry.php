@@ -32,8 +32,8 @@ if ( $id > 0 ) {
   }
 }
 
-if ( $ret == "list" )
+//if ( $ret == "list" )
   do_redirect ( "list_unapproved.php?user=$app_user" );
-else
-  do_redirect ( "view_entry.php?id=$id&amp;user=$app_user" );
+//else
+//  do_redirect ( "view_entry.php?id=$id&amp;user=$app_user" );
 ?>

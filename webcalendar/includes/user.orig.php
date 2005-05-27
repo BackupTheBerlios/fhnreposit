@@ -31,6 +31,8 @@ function user_valid_login ( $login, $password ) {
   global $error;
   $ret = false;
 
+//  echo "type auth".$settings['ldaphn_auth'];
+  
   $sql = "SELECT cal_login FROM webcal_user WHERE " .
     "cal_login = '" . $login . "' AND cal_passwd = '" . md5($password) . "'";
   $res = dbi_query ( $sql );

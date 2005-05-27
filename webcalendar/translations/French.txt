@@ -1152,7 +1152,7 @@ Invalid color: Couleur incorrecte
 ###############################################
 # Page: tools/send_reminders.php
 #
-This is a reminder for the event detailed below.: Ceci est un rappel pour l'évvènement suivant : 
+This is a reminder for the event detailed below.: Voici un rappel  pour l'événement suivant : 
 Reminder: Rappel
 
 New Entry All Users: Ajouter un évènement pour tous les utilisateurs de cette vue.

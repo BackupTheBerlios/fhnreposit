@@ -1,6 +1,6 @@
 <?php
 /*
- * $Id: import_ical.php,v 1.1 2005/05/27 09:26:38 vmaury Exp $
+ * $Id: import_ical.php,v 1.2 2005/05/27 10:11:42 vmaury Exp $
  *
  * File Description:
  *	This file incudes functions for parsing iCal data files during

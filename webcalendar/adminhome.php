@@ -1,6 +1,6 @@
 <?php
 /*
- * $Id: adminhome.php,v 1.1 2005/05/27 09:26:37 vmaury Exp $
+ * $Id: adminhome.php,v 1.2 2005/05/27 10:11:42 vmaury Exp $
  *
  * Page Description:
  *	Serves as the home page for administrative functions.

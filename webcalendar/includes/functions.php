@@ -2240,7 +2240,6 @@ function get_cat_picto($cat_id) {
         if(!$_SESSION['picto']) 
         {
                 $array_picto = array();
-                echo "je les mémorise";
                 $res = dbi_query ('SELECT * FROM webcal_categories');
                 while ( $row = dbi_fetch_row ( $res ) ) 
                 {

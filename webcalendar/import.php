@@ -1,6 +1,6 @@
 <?php
 /*
- * $Id: import.php,v 1.1 2005/05/27 09:26:38 vmaury Exp $
+ * $Id: import.php,v 1.2 2005/05/27 10:11:42 vmaury Exp $
  *
  * Page Description:
  *	This page will present the user with forms for submitting

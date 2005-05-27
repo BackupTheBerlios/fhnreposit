@@ -1,6 +1,6 @@
 <?php
 /*
- * $Id: publish.php,v 1.1 2005/05/27 09:26:39 vmaury Exp $
+ * $Id: publish.php,v 1.2 2005/05/27 10:11:43 vmaury Exp $
  *
  * Description:
  *	Creates the iCal output for a single user's calendar so

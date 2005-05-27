@@ -286,26 +286,26 @@ function send_reminder ( $id, $event_date ) {
       $body .= "<b>".translate("Created by") . ":</b> " . $names[$row[0]] . "<br>\n";
 
     // site extra fields
-    $extras = get_site_extra_fields ( $id );
-    for ( $i = 0; $i < count ( $site_extras ); $i++ ) {
-      $extra_name = $site_extras[$i][0];
-      $extra_descr = $site_extras[$i][1];
-      $extra_type = $site_extras[$i][2];
-      if ( $extras[$extra_name]['cal_name'] != "" ) {
-        $body .= "<b>". translate ( $extra_descr ) . ":</b> ";
-        if ( $extra_type == $EXTRA_DATE ) {
-          $body .= date_to_str ( $extras[$extra_name]['cal_date'] ) . "<br>\n";
-        } else if ( $extra_type == $EXTRA_MULTILINETEXT ) {
-          $body .= "\n" . indent ( $extras[$extra_name]['cal_data'] ) . "<br>\n";
-        } else if ( $extra_type == $EXTRA_REMINDER ) {
-          //$body .= ( $extras[$extra_name]['cal_remind'] > 0 ?
-          // translate("Yes") : translate("No") ) . "\n";
-        } else {
-          // default method for $EXTRA_URL, $EXTRA_TEXT, etc...
-          $body .= $extras[$extra_name]['cal_data'] . "<br>\n";
-        }
-      }
-    }
+#    $extras = get_site_extra_fields ( $id );
+#    for ( $i = 0; $i < count ( $site_extras ); $i++ ) {
+#      $extra_name = $site_extras[$i][0];
+#      $extra_descr = $site_extras[$i][1];
+#      $extra_type = $site_extras[$i][2];
+#      if ( $extras[$extra_name]['cal_name'] != "" ) {
+#        $body .= "<b>". translate ( $extra_descr ) . ":</b> ";
+#        if ( $extra_type == $EXTRA_DATE ) {
+#          $body .= date_to_str ( $extras[$extra_name]['cal_date'] ) . "<br>\n";
+#        } else if ( $extra_type == $EXTRA_MULTILINETEXT ) {
+#          $body .= "\n" . indent ( $extras[$extra_name]['cal_data'] ) . "<br>\n";
+#        } else if ( $extra_type == $EXTRA_REMINDER ) {
+#          //$body .= ( $extras[$extra_name]['cal_remind'] > 0 ?
+#          // translate("Yes") : translate("No") ) . "\n";
+#        } else {
+#          // default method for $EXTRA_URL, $EXTRA_TEXT, etc...
+#          $body .= $extras[$extra_name]['cal_data'] . "<br>\n";
+#        }
+#      }
+#    }
     if ( $single_user != "Y" && ! $disable_participants_field ) {
       $body .= "<br><b>" . translate("Participants") . ":</b><br>\n";
       for ( $i = 0; $i < count ( $participants ); $i++ ) {
@@ -334,7 +334,7 @@ function send_reminder ( $id, $event_date ) {
         echo "<hr /><pre>To: $recip\nSubject: $subject\n$extra_hdrs\n\n$body\n\n</pre>\n";
     } else {
       //mail ( $recip, $subject, $body, $extra_hdrs );
-      mail_html("webtech@haras-nationaux.fr", $subject, $body, "webcalendar@haras-nationaux.fr" );
+      mail_html($recip, $subject, $body, "webcalendar@haras-nationaux.fr" );
       activity_log ( $id, "system", $user, $LOG_REMINDER, "" );
     }
   }

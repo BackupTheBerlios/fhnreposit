@@ -21,7 +21,7 @@ db_host: localhost
 db_login: root 
 db_password:
 db_database: webcalendar
-db_persistent: true
+db_persistent: false 
 
 # Read-only mode: You can set this to true to create a read-only calendar.
 # If you enable $single_user_login (below), no login will be required,
@@ -68,9 +68,6 @@ use_http_auth: false
 # Note: if you enable LDAP support (with user-ladp.php), you will also
 # need to modify user-ldap.php to configure some settings.
 user_inc: user.php
-# authentification ldap special HN
-
-ldaphn_auth: true
 
 # end
 ?>

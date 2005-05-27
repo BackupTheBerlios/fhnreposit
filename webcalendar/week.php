@@ -282,7 +282,7 @@ for ( $d = $start_ind; $d < $end_ind; $d++ ) {
           $viewname, $rep[$cur_rep]['cal_description'],
           $rep[$cur_rep]['cal_status'], $rep[$cur_rep]['cal_priority'],
           $rep[$cur_rep]['cal_access'], $rep[$cur_rep]['cal_duration'],
-          $rep[$cur_rep]['cal_login'],$rep[$cur_rep]['cal_picto']);
+          $rep[$cur_rep]['cal_login'] );
       }
       $cur_rep++;
     }
@@ -302,7 +302,7 @@ for ( $d = $start_ind; $d < $end_ind; $d++ ) {
         $viewname, $ev[$i]['cal_description'],
         $ev[$i]['cal_status'], $ev[$i]['cal_priority'],
         $ev[$i]['cal_access'], $ev[$i]['cal_duration'],
-        $ev[$i]['cal_login'], $ev[$i]['cal_picto'] );
+        $ev[$i]['cal_login'] );
     }
   }
   // print out any remaining repeating events
@@ -323,7 +323,7 @@ for ( $d = $start_ind; $d < $end_ind; $d++ ) {
         $viewname, $rep[$cur_rep]['cal_description'],
         $rep[$cur_rep]['cal_status'], $rep[$cur_rep]['cal_priority'],
         $rep[$cur_rep]['cal_access'], $rep[$cur_rep]['cal_duration'],
-        $rep[$cur_rep]['cal_login'],$rep[$cur_rep]['cal_picto'] );
+        $rep[$cur_rep]['cal_login'] );
     }
     $cur_rep++;
   }

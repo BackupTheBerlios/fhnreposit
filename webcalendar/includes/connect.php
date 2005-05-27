@@ -88,7 +88,6 @@ if ( $res ) {
   }
   dbi_free_result ( $res );
 }
-
 if ( $pub_acc_enabled ) {
   $res = dbi_query ( "SELECT cal_value FROM webcal_config " .
     "WHERE cal_setting = 'public_access_can_add'" );

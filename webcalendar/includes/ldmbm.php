@@ -183,7 +183,7 @@ class ldmbm
 
     if($_POST['search'])
     {
-      $result = $this->db_query('SELECT webcal_group_user.cal_login, webcal_user.cal_firstname, webcal_user.cal_lastname FROM webcal_group_user, webcal_user WHERE webcal_group_user.cal_login = webcal_user.cal_login AND webcal_user.cal_lastname like \'%'.$_POST['search'].'%\' ORDER BY webcal_user.cal_lastname ASC');
+      $result = $this->db_query('SELECT webcal_group_user.cal_login, webcal_user.cal_firstname, webcal_user.cal_lastname FROM webcal_group_user, webcal_user WHERE webcal_group_user.cal_login = webcal_user.cal_login AND (webcal_user.cal_lastname like \'%'.$_POST['search'].'%\' OR webcal_user.cal_firstname like \'%'.$_POST['search'].'%\') ORDER BY webcal_user.cal_lastname ASC');
 
       // On cherche dans les utilisateurs normaux
       // ----------------------------------------
