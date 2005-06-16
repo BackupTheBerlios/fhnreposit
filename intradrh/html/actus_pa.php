@@ -8,7 +8,7 @@ JSpopup(530,500); ?>
 Il serait peut-être intéressant de conserver cette zone afin de <strong>mettre en exergue</strong> des infos 
 à destination des acteurs RH qui utilisent cette application...<br><br><br><br><br><br><br><br><br>
 <ul>
-<li> actus xxxxxxxxxxx
+<li> actus bidon:wq
 <li> actus xxxxxxxxxxx
 <li> actus xxxxxxxxxxx
 <li> actus xxxxxxxxxxx
